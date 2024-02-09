@@ -1,0 +1,430 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed !important;
+  width: 100%;
+  background-color: rgba(74, 74, 244, 0.679) !important;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-left: 5%;
+}
+.navbar .container-fluid #mynavbar {
+  margin-left: 35%;
+}
+.navbar .container-fluid #mynavbar .navbar-nav {
+  gap: 30px;
+}
+.navbar .container-fluid #mynavbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+#home {
+  background-image: url("../img/trees-bg.png");
+  height: 100vh;
+  background-size: cover;
+}
+#home .container {
+  height: 100%;
+}
+#home .container .wrapper {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#home .container .wrapper-title {
+  width: 500px;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 10px;
+}
+#home .container .wrapper-title::before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 3px;
+  background-color: rgb(0, 162, 255);
+  top: 100%;
+  left: 45%;
+}
+#home .container .wrapper-text {
+  padding-top: 20px;
+  width: 800px;
+  text-align: center;
+  color: white;
+}
+#home .container .wrapper-btn {
+  padding: 10px 20px;
+  background-color: transparent !important;
+  border: 2px solid rgb(0, 162, 255);
+  border-radius: 10px;
+  color: rgb(0, 162, 255);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s linear;
+}
+#home .container .wrapper-btn:hover {
+  border: 2px solid white;
+  color: white;
+}
+#home .container .boxes {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#home .container .boxes .box {
+  width: 20px;
+  height: 20px;
+  background-color: transparent !important;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+#home .container .boxes .box-1 {
+  border: 2px solid rgb(0, 162, 255) !important;
+  background-color: rgb(0, 162, 255) !important;
+}
+
+#story {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#story .row .col-md-6 img {
+  padding-left: 40%;
+}
+#story .wrapper-btn {
+  padding: 10px 20px;
+  background-color: transparent !important;
+  border: 2px solid rgb(0, 162, 255);
+  border-radius: 10px;
+  color: rgb(0, 162, 255);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s linear;
+}
+
+#story1 {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/story-bg.png");
+  background-size: cover;
+}
+#story1 .row-2 svg {
+  margin-left: 30%;
+}
+
+#expertise {
+  height: 100vh;
+  position: relative;
+}
+#expertise .expertise-title {
+  padding-top: 5%;
+}
+#expertise .expertise-text::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: gray;
+  top: 18%;
+  left: 47%;
+}
+#expertise .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#expertise .container .row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#expertise .container .row img {
+  padding-bottom: 8%;
+}
+#expertise .container .row .design {
+  height: 30vh;
+  width: 30%;
+  border-right: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#expertise .container .row .design h2 {
+  font-size: 20px;
+}
+#expertise .container .row .design1, #expertise .container .row .design2, #expertise .container .row .design3 {
+  border-bottom: 1px solid grey;
+}
+#expertise .container .row .design3, #expertise .container .row .design6 {
+  border-right: hidden;
+}
+#expertise .container .row1 {
+  padding-top: 6%;
+}
+#expertise .container .row1 img {
+  padding-bottom: 8%;
+}
+
+#team {
+  height: 80vh;
+  background-image: url("../img/team-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#team .row {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 3%;
+}
+#team .row .card {
+  width: 20%;
+  height: 50%;
+  border: 1px solid white;
+  background-color: transparent !important;
+}
+#team .row .card .card-header1 {
+  width: 100%;
+}
+#team .part {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+}
+#team .part-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent !important;
+  border: 2px solid rgb(0, 162, 255);
+  border-radius: 10px;
+  color: rgb(0, 162, 255);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#works {
+  height: 100vh;
+}
+#works .quti {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#works .quti .nom {
+  display: flex;
+}
+#works .quti .nom svg {
+  margin-top: 2%;
+}
+#works .row {
+  height: 50%;
+  display: flex;
+}
+#works .row .button {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#works .row .button .btn {
+  padding: 10px 20px;
+  background-color: transparent !important;
+  border: 2px solid rgb(0, 162, 255);
+  border-radius: 10px;
+  color: rgb(0, 162, 255);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#photoshop {
+  height: 80vh;
+  background-image: url("../img/trees-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#photoshop .container {
+  height: 100%;
+}
+#photoshop .container .quticha {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#photoshop .container .quticha .ism {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7%;
+}
+#photoshop .container .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+}
+#photoshop .container .boxes .img {
+  border-radius: 50%;
+}
+
+#client {
+  height: 70vh;
+}
+#client .row {
+  height: 100%;
+  width: 100%;
+}
+#client .client-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10%;
+}
+#client .client-input #inp1, #client .client-input #inp2, #client .client-input #inp3 {
+  width: 400px;
+  height: 50px;
+  padding: 10px 10px;
+}
+#client .client-input #inp4 {
+  width: 400px;
+  height: 200px;
+}
+#client .client-input .btn {
+  padding: 10px 40px;
+  background-color: transparent !important;
+  border: 2px solid rgb(0, 162, 255);
+  color: rgb(0, 162, 255);
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 44%;
+}
+#client .client2 .client-title {
+  padding-left: 9% !important;
+  padding-bottom: 3%;
+}
+#client .client2 .good {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-right: 20%;
+}
+#client .client2 .good .happy1, #client .client2 .good .happy2 {
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#client .client2 .good .happy2 {
+  padding-left: 10%;
+}
+
+#stay {
+  height: 60vh;
+  background-image: url("../img/footer-bg.png");
+  background-size: cover;
+}
+#stay .container {
+  display: flex;
+}
+#stay .stay-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+#stay .stay-1 .footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding-top: 20%;
+}
+#stay .stay-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#stay .stay-2 .svg {
+  display: flex;
+}
+#stay .stay-2 .svg svg {
+  margin-top: 2%;
+  margin-right: 3%;
+}
+#stay .stay-2 .icon {
+  display: flex;
+  margin-right: 52%;
+}
+#stay .stay-2 .icon svg {
+  margin-top: 10%;
+}
+#stay .stay-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#stay .stay-3 .our {
+  display: flex;
+  gap: 5px;
+}
+#stay .stay-3 .our input {
+  width: 300px;
+  height: 50px;
+  padding: 10px 10px;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgba(245, 239, 239, 0.86);
+}
+#stay .stay-3 .our .rasm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+}
+#stay .stay-3 .quti {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  gap: 5%;
+}
+#stay .stay-3 .quticha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+#stay .stay-3 .title {
+  margin-left: 50x;
+}/*# sourceMappingURL=style.css.map */
